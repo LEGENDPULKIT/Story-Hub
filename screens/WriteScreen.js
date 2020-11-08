@@ -51,6 +51,10 @@ export default class WriteScreen extends React.Component {
           value={this.state.Story}
         />
         </View>
+
+        <TouchableOpacity style={styles.submitButton}>    
+          <Text style={styles.submitbuttonText}>SUBMIT</Text>
+          </TouchableOpacity>
       </View>
     );
   }
@@ -76,5 +80,21 @@ export default class WriteScreen extends React.Component {
       justifyContent:'center',
       fontSize:20,
     },
+    submitButton:
+    {
+        backgroundColor:'teal',
+        width:100,
+        height:50,
+        justifyContent:'center',
+        borderWidth:2,
+        marginLeft:100,
+        alignItems:'center',
+    },
+    submitbuttonText:
+    {
+        fontSize:20,
+        textAlign:'center',
+        color:'white',
+    }
   });
   
